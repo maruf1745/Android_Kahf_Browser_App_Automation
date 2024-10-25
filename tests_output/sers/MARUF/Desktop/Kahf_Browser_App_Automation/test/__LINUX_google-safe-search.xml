@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="6"
+            failures="0"
+            tests="1">
+
+  <testsuite name="sers.MARUF.Desktop.Kahf_Browser_App_Automation.test.google-safe-search"
+    errors="6" failures="0" hostname="" id="" package="test" skipped="0"
+    tests="1" time="126.9" timestamp="">
+  
+    <testcase name="Google Safe Search" classname="sers.MARUF.Desktop.Kahf_Browser_App_Automation.test.google-safe-search" time="63.44" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;//android.widget.TextView[@resource-id=&#34;org.halalz.kahfbrowser:id/phrase&#34; and @text=&#34;www.google.com&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.TextView[@resource-id=&#34;org.halalz.kahfbrowser:id/phrase&#34; and @text=&#34;www.google.com&#34;]&#34; with &#34;xpath&#34; to be present for 10000 milliseconds." type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\test\google-safe-search.js:12:10)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnContinue&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnContinue&#34;]&#34; with &#34;xpath&#34; to be present for 10000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\test\google-safe-search.js:7
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |         app
+     6 |         .useXpath()
+     7 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnContinue&#34;]&#39;) 
+     8 |         .click(&#39;xpath&#39;, &#39;(//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/rootView&#34;])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView&#39;)
+     9 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnSetBookmark&#34;]&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;(//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/rootView&#34;])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView&gt;: Timed out while waiting for element &#34;(//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/rootView&#34;])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView&#34; with &#34;xpath&#34; to be present for 10000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\test\google-safe-search.js:8
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         .useXpath()
+     7 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnContinue&#34;]&#39;)
+     8 |         .click(&#39;xpath&#39;, &#39;(//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/rootView&#34;])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView&#39;) 
+     9 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnSetBookmark&#34;]&#39;)
+     10 |         .click(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;)  
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnSetBookmark&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnSetBookmark&#34;]&#34; with &#34;xpath&#34; to be present for 10000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\test\google-safe-search.js:9
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnContinue&#34;]&#39;)
+     8 |         .click(&#39;xpath&#39;, &#39;(//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/rootView&#34;])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView&#39;)
+     9 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnSetBookmark&#34;]&#39;) 
+     10 |         .click(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;)  
+     11 |         .sendKeys(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;, &#39;google.com&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#34; with &#34;xpath&#34; to be present for 10000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\test\google-safe-search.js:10
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |         .click(&#39;xpath&#39;, &#39;(//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/rootView&#34;])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView&#39;)
+     9 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnSetBookmark&#34;]&#39;)
+     10 |         .click(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;)   
+     11 |         .sendKeys(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;, &#39;google.com&#39;)
+     12 |         .click({selector: &#39;//android.widget.TextView[@resource-id=&#34;org.halalz.kahfbrowser:id/phrase&#34; and @text=&#34;www.google.com&#34;]&#39;, locateStrategy: &#39;xpath&#39;, index: 1})
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .sendKeys() command on &lt;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#34; with &#34;xpath&#34; to be present for 10000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\test\google-safe-search.js:11
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |         .click(&#39;xpath&#39;, &#39;//android.widget.FrameLayout[@resource-id=&#34;org.halalz.kahfbrowser:id/btnSetBookmark&#34;]&#39;)
+     10 |         .click(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;)  
+     11 |         .sendKeys(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;, &#39;google.com&#39;) 
+     12 |         .click({selector: &#39;//android.widget.TextView[@resource-id=&#34;org.halalz.kahfbrowser:id/phrase&#34; and @text=&#34;www.google.com&#34;]&#39;, locateStrategy: &#39;xpath&#39;, index: 1})
+     13 |         
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;//android.widget.TextView[@resource-id=&#34;org.halalz.kahfbrowser:id/phrase&#34; and @text=&#34;www.google.com&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.TextView[@resource-id=&#34;org.halalz.kahfbrowser:id/phrase&#34; and @text=&#34;www.google.com&#34;]&#34; with &#34;xpath&#34; to be present for 10000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\test\google-safe-search.js:12
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     10 |         .click(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;)  
+     11 |         .sendKeys(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34;]&#39;, &#39;google.com&#39;)
+     12 |         .click({selector: &#39;//android.widget.TextView[@resource-id=&#34;org.halalz.kahfbrowser:id/phrase&#34; and @text=&#34;www.google.com&#34;]&#39;, locateStrategy: &#39;xpath&#39;, index: 1}) 
+     13 |         
+     14 |         
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

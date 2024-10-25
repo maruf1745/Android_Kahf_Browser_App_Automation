@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="mobile-app-tests.demoTesting"
+    errors="1" failures="0" hostname="" id="" package="mobile-app-tests" skipped="0"
+    tests="1" time="16.43" timestamp="">
+  
+    <testcase name="Demo test check" classname="mobile-app-tests.demoTesting" time="8.210" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;//android.widget.TextView[@content-desc=&#34;Big Bazar&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.TextView[@content-desc=&#34;Big Bazar&#34;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds." type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\demoTesting.js:4:10)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;//android.widget.TextView[@content-desc=&#34;Big Bazar&#34;]&gt;: Timed out while waiting for element &#34;//android.widget.TextView[@content-desc=&#34;Big Bazar&#34;]&#34; with &#34;xpath&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\demoTesting.js:4
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     2 |     it(&#39;Demo test check&#39;, async function(app) {
+     3 |         app
+     4 |         .click(&#39;xpath&#39;, &#39;//android.widget.TextView[@content-desc=&#34;Big Bazar&#34;]&#39;) 
+     5 |         .click(&#39;xpath&#39;,&#39;//android.widget.EditText[@resource-id=&#34;com.biforst.broonline.bigbazar:id/username&#34;]&#39;)
+     6 |         .sendKeys(&#39;xpath&#39;, &#39;//android.widget.EditText[@resource-id=&#34;com.biforst.broonline.bigbazar:id/username&#34;]&#39;, &#39;maruf@gmail.com&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

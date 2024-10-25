@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="mobile-app-tests.edge-site-block"
+    errors="1" failures="0" hostname="" id="" package="mobile-app-tests" skipped="3"
+    tests="0" time="0.003000" timestamp="">
+  
+
+  
+    <system-err>
+       ✖ ReferenceError
+   MyFunction is not defined
+
+    Error location:
+    C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\edge-site-block.js:3
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     1 | describe(&#39;Bing Site Block&#39;, function(){
+     2 |     before(function(app){
+     3 |         MyFunction(); 
+     4 |     });
+     5 |     it(&#39;Bing Site Block for Default(Low) mode&#39;, async function(app) {
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    Stack Trace :
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\edge-site-block.js:3:9)
+    at Context.callAsync (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\context.js:531:20)
+    at Context.invokeMethod (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\context.js:480:21)
+    at C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\hooks\_basehook.js:88:49
+    at new Promise (&lt;anonymous&gt;)
+    at BeforeAll.run (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\hooks\_basehook.js:62:14)
+    at Runnable.__runFn (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\index.js:471:35)
+    at Runnable.run (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.executeRunnable (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\index.js:1000:49)
+    at TestSuite.handleRunnable (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\index.js:1015:33)
+
+    </system-err>
+  
+
+    
+    <error message="MyFunction is not defined"><![CDATA[
+      ReferenceError: MyFunction is not defined
+    at DescribeInstance.&lt;anonymous&gt; (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\edge-site-block.js:3:9)
+    at Context.callAsync (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\context.js:531:20)
+    at Context.invokeMethod (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\context.js:480:21)
+    at C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\hooks\_basehook.js:88:49
+    at new Promise (&lt;anonymous&gt;)
+    at BeforeAll.run (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\hooks\_basehook.js:62:14)
+    at Runnable.__runFn (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\index.js:471:35)
+    at Runnable.run (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.executeRunnable (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\index.js:1000:49)
+    at TestSuite.handleRunnable (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\node_modules\nightwatch\lib\testsuite\index.js:1015:33)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Bing Site Block for Default(Low) mode" classname="mobile-app-tests.edge-site-block">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Bing Site Block for Medium mode" classname="mobile-app-tests.edge-site-block">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Bing Site Block for High mode" classname="mobile-app-tests.edge-site-block">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
