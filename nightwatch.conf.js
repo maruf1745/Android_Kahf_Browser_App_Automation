@@ -103,7 +103,8 @@ module.exports = {
           
           app: `${__dirname}/nightwatch/sample-apps/kahf_browser.apk`,
           appPackage: 'org.halalz.kahfbrowser',
-          appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
+          appActivity: 'com.duckduckgo.app.launch.LaunchBridgeActivity',
+          //appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
           //appWaitActivity: 'com.duckduckgo.app.onboarding.ui.OnboardingActivity',
 
           //app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
@@ -135,7 +136,8 @@ module.exports = {
         
           app: `${__dirname}/nightwatch/sample-apps/kahf_browser.apk`,
           appPackage: 'org.halalz.kahfbrowser',
-          appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
+          appActivity: 'com.duckduckgo.app.launch.LaunchBridgeActivity',
+          //appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
           //appWaitActivity: 'com.duckduckgo.app.onboarding.ui.OnboardingActivity',
 
           //app: `${__dirname}/nightwatch/sample-apps/demoTesting.apk`,
