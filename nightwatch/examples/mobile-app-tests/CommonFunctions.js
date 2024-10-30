@@ -19,7 +19,36 @@ module.exports = {
         //Click Next Button
         .click('xpath', '//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/btnSetBookmark"]')
     },
-    SiteBlocking: async function(app) {
+
+    SiteBlock: async function(app) {
+        app
+        .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
+        //Browse by URL
+        //.sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'https://protonvpn.com/')
+        //Browse by text
+        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'Proton VPN')
+        .pause(5000)
+        .appium.pressKeyCode(66)
+        .pause(5000)
+        .click('xpath', '//android.view.View[@resource-id="r1-0"]')
+        .pause(5000)
+    },
+    DNSSettings: async function(app) {
+        app
+        //Medium
+        .click('xpath', '//android.widget.ImageButton[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+        .pause(5000)
+        .click('xpath', '(//android.widget.RelativeLayout[@resource-id="org.halalz.kahfbrowser:id/btnContainer"])[2]')
+        .pause(5000)
+        //High
+        .click('xpath', '//android.widget.ImageButton[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+        .pause(5000)
+        .click('xpath', '(//android.widget.RelativeLayout[@resource-id="org.halalz.kahfbrowser:id/btnContainer"])[3]')
+        .pause()
+
+    },
+
+    BrowserSiteBlocking: async function(app) {
         const testBrowsers = ['https://www.google.com/', 'https://www.bing.com/'];
         for(let i = 0; i < testBrowsers.length; i++){
             app

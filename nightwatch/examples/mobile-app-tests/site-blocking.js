@@ -5,7 +5,8 @@ describe('Safe Searching', function(){
         app
         .click('id', 'org.halalz.kahfbrowser:id/btnContinue')
         CommonFunctions.FavoriteBookmarks(app);
-        CommonFunctions.SiteBlocking(app);    
+        CommonFunctions.SiteBlock(app); 
+        CommonFunctions.DNSSettings(app);   
     })
 });
 
