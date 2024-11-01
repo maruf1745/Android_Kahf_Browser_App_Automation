@@ -1,4 +1,7 @@
 module.exports = {
+    ClickOnLetsGoButton: async function(app) {
+        app.click('id', 'org.halalz.kahfbrowser:id/btnContinue')
+    },
     Onboarding: async function(app) {
         app
         //Set as Default Browser
@@ -8,6 +11,13 @@ module.exports = {
         .click('xpath', '//android.widget.ImageButton[@content-desc="Navigate up"]')
         .pause(5000)
         .click('xpath', '//android.widget.ImageButton[@content-desc="Navigate up"]')        
+    },
+    SkipOnboarding: async function(app) {
+        app
+        //Skip default Browser settings
+        //.click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
+        //Skip Bookmarks settings
+        .click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
     },
     FavoriteBookmarks: async function(app) {
         app
@@ -46,6 +56,14 @@ module.exports = {
         .click('xpath', '(//android.widget.RelativeLayout[@resource-id="org.halalz.kahfbrowser:id/btnContainer"])[3]')
         .pause()
 
+    },
+    SafeSearch: async function(app) {
+        app
+        .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
+        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'Proton VPN')
+        .pause(5000)
+        .appium.pressKeyCode(66)
+        .pause(5000)
     },
 
     BrowserSiteBlocking: async function(app) {

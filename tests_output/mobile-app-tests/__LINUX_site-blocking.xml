@@ -5,9 +5,9 @@
 
   <testsuite name="mobile-app-tests.site-blocking"
     errors="0" failures="0" hostname="" id="" package="mobile-app-tests" skipped="0"
-    tests="1" time="352.5" timestamp="">
+    tests="1" time="169.2" timestamp="">
   
-    <testcase name="Proton VPN safe search testing" classname="mobile-app-tests.site-blocking" time="176.2" assertions="0">
+    <testcase name="Proton VPN site block testing" classname="mobile-app-tests.site-blocking" time="84.59" assertions="0">
     </testcase>
   
 

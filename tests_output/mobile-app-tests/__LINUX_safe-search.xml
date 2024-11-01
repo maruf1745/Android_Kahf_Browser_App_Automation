@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="1">
+
+  <testsuite name="mobile-app-tests.safe-search"
+    errors="2" failures="0" hostname="" id="" package="mobile-app-tests" skipped="0"
+    tests="1" time="55.36" timestamp="">
+  
+    <testcase name="Safe Search: filter out explicit content from search results." classname="mobile-app-tests.safe-search" time="27.67" assertions="0">
+    <error message="An error occurred while running .sendKeys() command on &lt;org.halalz.kahfbrowser:id/omnibarTextInput&gt;: Timed out while waiting for element &#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34; with &#34;id&#34; to be present for 5000 milliseconds." type="error"><![CDATA[
+    Error
+    at Object.SafeSearch (E:\KAHF\Android_Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\CommonFunctions.js:63:10)
+    at DescribeInstance.&lt;anonymous&gt; (E:\KAHF\Android_Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\safe-search.js:8:25)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;org.halalz.kahfbrowser:id/omnibarTextInput&gt;: Timed out while waiting for element &#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34; with &#34;id&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    E:\KAHF\Android_Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\safe-search.js:8
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         //CommonFunctions.FavoriteBookmarks(app);
+     7 |         CommonFunctions.SkipOnboarding(app);
+     8 |         CommonFunctions.SafeSearch(app); 
+     9 | 
+     10 |     })
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .sendKeys() command on &lt;org.halalz.kahfbrowser:id/omnibarTextInput&gt;: Timed out while waiting for element &#34;org.halalz.kahfbrowser:id/omnibarTextInput&#34; with &#34;id&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;WebDriverError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    E:\KAHF\Android_Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\safe-search.js:8
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         //CommonFunctions.FavoriteBookmarks(app);
+     7 |         CommonFunctions.SkipOnboarding(app);
+     8 |         CommonFunctions.SafeSearch(app); 
+     9 | 
+     10 |     })
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

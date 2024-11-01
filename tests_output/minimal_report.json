@@ -1,1 +1,1 @@
-{"modules":{"mobile-app-tests\\site-blocking":{"modulePath":"E:\\KAHF\\Android_Kahf_Browser_App_Automation\\nightwatch\\examples\\mobile-app-tests\\site-blocking.js","status":"skip"}}}
+{"modules":{"mobile-app-tests\\safe-search":{"modulePath":"E:\\KAHF\\Android_Kahf_Browser_App_Automation\\nightwatch\\examples\\mobile-app-tests\\safe-search.js","status":"fail"}}}
