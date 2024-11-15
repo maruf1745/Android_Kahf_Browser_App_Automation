@@ -11,8 +11,12 @@
   "description": "",
   "devDependencies": {
     "@nightwatch/mobile-helper": "^1.0.0",
-    "appium": "^1.22.3",
+    "appium": "^2.0.1",
     "appium-uiautomator2-driver": "^2.2.0",
-    "nightwatch": "^3.8.0"
+    "driver": "^1.0.0",
+    "install": "^0.13.0",
+    "nightwatch": "^3.8.0",
+    "npx": "^10.2.2",
+    "uiautomator2": "^1.0.2"
   }
 }

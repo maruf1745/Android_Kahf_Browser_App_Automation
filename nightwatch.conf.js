@@ -15,7 +15,6 @@ module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: ['test','nightwatch/examples'],
-  //src_folders: ['test','test'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
   page_objects_path: [],
@@ -78,7 +77,7 @@ module.exports = {
       webdriver: {
         timeout_options: {
           timeout: 150000,
-          retry_attempts: 1
+          retry_attempts: 3
         },
         keep_alive: false,
         start_process: false
@@ -100,21 +99,22 @@ module.exports = {
           avd: 'nightwatch-android-11',
           // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
           // Appium v2 does not support relative paths.
-          
-          app: `${__dirname}/nightwatch/sample-apps/kahf_browser.apk`,
+
+          app: '${__dirname}/nightwatch/sample-apps/kahf_browser.apk',
           appPackage: 'org.halalz.kahfbrowser',
           appActivity: 'com.duckduckgo.app.launch.LaunchBridgeActivity',
           //appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
           //appWaitActivity: 'com.duckduckgo.app.onboarding.ui.OnboardingActivity',
+
 
           //app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
           //appPackage: 'org.wikipedia',
           //appActivity: 'org.wikipedia.main.MainActivity',
           //appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
 
+          
           // chromedriver executable to use for testing web-views in hybrid apps
-          appWaitForLaunch : false,
-          chromedriverExecutable: `${__dirname}/chromedriver-mobile/chromedriver.exe`,
+          chromedriverExecutable: `${__dirname}/chromedriver-mobile/chromedriver`,
           newCommandTimeout: 0
         }
       }
@@ -133,22 +133,20 @@ module.exports = {
           automationName: 'UiAutomator2',
           // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
           // Appium v2 does not support relative paths.
-        
-          app: `${__dirname}/nightwatch/sample-apps/kahf_browser.apk`,
+          app: '${__dirname}/nightwatch/sample-apps/kahf_browser.apk',
           appPackage: 'org.halalz.kahfbrowser',
           appActivity: 'com.duckduckgo.app.launch.LaunchBridgeActivity',
           //appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
           //appWaitActivity: 'com.duckduckgo.app.onboarding.ui.OnboardingActivity',
 
-          //app: `${__dirname}/nightwatch/sample-apps/demoTesting.apk`,
-          //appPackage: 'org.halalz.kahfbrowser',
-          //appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
-          //appWaitActivity: 'com.duckduckgo.app.onboarding.ui.OnboardingActivity',
+
+
 
           //app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
           //appPackage: 'org.wikipedia',
           //appActivity: 'org.wikipedia.main.MainActivity',
           //appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
+
 
           // 'chromedriver' binary is required while testing hybrid mobile apps.
           // 
@@ -156,7 +154,6 @@ module.exports = {
           // Or, put '--allow-insecure=chromedriver_autodownload' in `cli_args` property of `selenium`
           // config (see 'app' env above) to automatically download the required version of chromedriver
           // (delete `chromedriverExecutable` capability below in that case).
-          appWaitForLaunch : false,
           chromedriverExecutable: '',
           newCommandTimeout: 0,
           // add device id of the device to run tests on, if multiple devices are online

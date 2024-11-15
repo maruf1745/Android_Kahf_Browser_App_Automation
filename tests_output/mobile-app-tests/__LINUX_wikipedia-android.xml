@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="1"
+<testsuites errors="4"
+            failures="0"
             tests="1">
 
   <testsuite name="mobile-app-tests.wikipedia-android"
-    errors="0" failures="1" hostname="" id="" package="mobile-app-tests" skipped="0"
-    tests="1" time="41.70" timestamp="">
+    errors="4" failures="0" hostname="" id="" package="mobile-app-tests" skipped="0"
+    tests="1" time="0.3900" timestamp="">
   
-    <testcase name="Search for BrowserStack" classname="mobile-app-tests.wikipedia-android" time="20.01" assertions="1">  <failure message="Testing if element&#39;s &lt;.pcs-edit-section-title&gt; inner text equals &#39;BrowserStack&#39; in 5000ms - expected &#34;equals &#39;BrowserStack&#39;&#34; but got: &#34;element could not be located&#34; (5109ms)">    at DescribeInstance.&lt;anonymous&gt; (C:\Users\MARUF\Desktop\Kahf_Browser_App_Automation\nightwatch\examples\mobile-app-tests\wikipedia-android.js:17:15)</failure>
-
+    <testcase name="Search for BrowserStack" classname="mobile-app-tests.wikipedia-android" time="0" assertions="0">
+    <error message="Error while running &#34;waitUntil&#34; command: [TimeoutError] Wait timed out after 6960ms" type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/nightwatch/examples/mobile-app-tests/wikipedia-android.js:11:8)
+    at Context.call (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/testsuite/context.js:515:35)
+    at TestCase.run (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/testsuite/index.js:839:80)
+    at Runnable.run (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/testsuite/index.js:1000:49)
+    at TestSuite.handleRunnable (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/testsuite/index.js:1015:33)
+    at /Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/testsuite/index.js:839:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DefaultRunner.runTestSuite (/Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/node_modules/nightwatch/lib/runner/test-runners/default.js:83:7)
+    ]]></error>
     
     </testcase>
   
 
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .sendKeys() command on &lt;org.wikipedia:id/search_src_text&gt;: Timed out while waiting for element &#34;org.wikipedia:id/search_src_text&#34; with &#34;id&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/nightwatch/examples/mobile-app-tests/wikipedia-android.js:9
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |     app
+     8 |       .click(&#39;id&#39;, &#39;org.wikipedia:id/search_container&#39;)
+     9 |       .sendKeys(&#39;id&#39;, &#39;org.wikipedia:id/search_src_text&#39;, &#39;browserstack&#39;) 
+     10 |       .click({selector: &#39;org.wikipedia:id/page_list_item_title&#39;, locateStrategy: &#39;id&#39;, index: 0})
+     11 |       .waitUntil(async function() {
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;org.wikipedia:id/page_list_item_title&gt;: Timed out while waiting for element &#34;org.wikipedia:id/page_list_item_title&#34; with &#34;id&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/nightwatch/examples/mobile-app-tests/wikipedia-android.js:10
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |       .click(&#39;id&#39;, &#39;org.wikipedia:id/search_container&#39;)
+     9 |       .sendKeys(&#39;id&#39;, &#39;org.wikipedia:id/search_src_text&#39;, &#39;browserstack&#39;)
+     10 |       .click({selector: &#39;org.wikipedia:id/page_list_item_title&#39;, locateStrategy: &#39;id&#39;, index: 0}) 
+     11 |       .waitUntil(async function() {
+     12 |         // wait for webview context to be available
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ TimeoutError
+   Wait timed out after 6960ms
+ TimeoutError
+   Error while running &#34;waitUntil&#34; command: [TimeoutError] Wait timed out after 6960ms
+
+    Error location:
+    /Users/mdmehedihasan/Desktop/Android_Kahf_Browser_App_Automation/nightwatch/examples/mobile-app-tests/wikipedia-android.js:11
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |       .sendKeys(&#39;id&#39;, &#39;org.wikipedia:id/search_src_text&#39;, &#39;browserstack&#39;)
+     10 |       .click({selector: &#39;org.wikipedia:id/page_list_item_title&#39;, locateStrategy: &#39;id&#39;, index: 0})
+     11 |       .waitUntil(async function() { 
+     12 |         // wait for webview context to be available
+     13 |         const contexts = await this.appium.getContexts();
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
   
 
     
