@@ -1,25 +1,35 @@
 module.exports = {
     ClickOnLetsGoButton: async function(app) {
+        //io.kahf.browser
         app.click('id', 'org.halalz.kahfbrowser:id/btnContinue')
     },
     Onboarding: async function(app) {
         app
         //Set as Default Browser
+                
+    },
+    SkipOnboarding: async function(app) {
+        app
+        //Skip default Browser settings
+        .click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
+        .pause(5000)
+        //Skip Bookmarks settings
+        .click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
+        .pause(10000)
+        //Skip Image Blurring
+        //.click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]"]')
+        //.pause(5000)
+    },
+    SetDefaultBrowser: async function(app) {
+        app
         .click('xpath', '//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/btnDefaultBrowser"]')
         .click('xpath', '//androidx.recyclerview.widget.RecyclerView[@resource-id="com.android.permissioncontroller:id/recycler_view"]/android.widget.LinearLayout[1]/android.widget.LinearLayout')
         .click('xpath', '(//android.widget.RadioButton[@resource-id="android:id/checkbox"])[2]')
         .click('xpath', '//android.widget.ImageButton[@content-desc="Navigate up"]')
         .pause(5000)
-        .click('xpath', '//android.widget.ImageButton[@content-desc="Navigate up"]')        
+        .click('xpath', '//android.widget.ImageButton[@content-desc="Navigate up"]')
     },
-    SkipOnboarding: async function(app) {
-        app
-        //Skip default Browser settings
-        //.click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
-        //Skip Bookmarks settings
-        .click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
-    },
-    FavoriteBookmarks: async function(app) {
+    SetFavoriteBookmarks: async function(app) {
         app
         //Add to Bookmark
         .click('xpath', '(//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/rootView"])[1]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
@@ -30,7 +40,7 @@ module.exports = {
         .click('xpath', '//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/btnSetBookmark"]')
     },
 
-    SiteBlock: async function(app) {
+    SiteBlocking: async function(app) {
         app
         .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
         //Browse by URL
@@ -57,13 +67,20 @@ module.exports = {
         .pause()
 
     },
-    SafeSearch: async function(app) {
+    SelectDecentInternet: async function(app) {
+        app
+        .click('xpath', '//android.widget.ImageButton[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+        .pause(5000)
+        .click('xpath', '//android.widget.Switch[@resource-id="org.halalz.kahfbrowser:id/switch_safe_gaze"]')
+        .pause()
+    },
+    SafeSearching: async function(app) {
         app
         .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
-        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'Proton VPN')
+        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'Porn Hub')
         .pause(5000)
         .appium.pressKeyCode(66)
-        .pause(5000)
+        .pause(10000)
     },
 
     BrowserSiteBlocking: async function(app) {
@@ -96,6 +113,15 @@ module.exports = {
         }
        
         app.pause()
+    },
+
+    ImageBlurring: async function(app) {
+        app
+        .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
+        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'https://sites.google.com/kahf.co/safegaze')
+        .appium.pressKeyCode(66)
+        .pause(5000)
+
     }
 
 };

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="mobile-app-tests.image-bluring"
+    errors="1" failures="0" hostname="" id="" package="mobile-app-tests" skipped="1"
+    tests="0" time="0.001000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new Appium Server session: [WebDriverError] An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20000ms
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new Appium Server session: [WebDriverError] An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20000ms"><![CDATA[
+      WebDriverError: An error occurred while creating a new Appium Server session: [WebDriverError] An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20000ms
+    at Object.throwDecodedError (/Applications/Android_Kahf_Browser_App_Automation/node_modules/selenium-webdriver/lib/error.js:521:15)
+    at parseHttpResponse (/Applications/Android_Kahf_Browser_App_Automation/node_modules/selenium-webdriver/lib/http.js:514:13)
+    at Executor.execute (/Applications/Android_Kahf_Browser_App_Automation/node_modules/selenium-webdriver/lib/http.js:446:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Shield Your Eyes from Harmful Content" classname="mobile-app-tests.image-bluring">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

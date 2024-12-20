@@ -5,7 +5,8 @@ describe('Safe Searching', function(){
         CommonFunctions.ClickOnLetsGoButton(app);
         //CommonFunctions.FavoriteBookmarks(app);
         CommonFunctions.SkipOnboarding(app);
-        CommonFunctions.SafeSearch(app);
-
+        CommonFunctions.SafeSearching(app);
+        CommonFunctions.DNSSettings(app);
+ 
     })
 });
