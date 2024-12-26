@@ -102,8 +102,8 @@ module.exports = {
 
           //app: '${__dirname}/nightwatch/sample-apps/kahf_browser.apk',
           app: '/Applications/Android_Kahf_Browser_App_Automation/nightwatch/sample-apps/kahf_browser.apk',
-          appPackage: 'org.halalz.kahfbrowser',
-          //appPackage: 'io.kahf.browser',
+          //appPackage: 'org.halalz.kahfbrowser',
+          appPackage: 'io.kahf.browser',
           appActivity: 'com.duckduckgo.app.launch.LaunchBridgeActivity',
           //appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
           //appWaitActivity: 'com.duckduckgo.app.onboarding.ui.OnboardingActivity',
@@ -137,8 +137,8 @@ module.exports = {
           // Appium v2 does not support relative paths.
           //app: '${__dirname}/nightwatch/sample-apps/kahf_browser.apk',
           app: '/Applications/Android_Kahf_Browser_App_Automation/nightwatch/sample-apps/kahf_browser.apk',
-          //appPackage: 'io.kahf.browser',
-          appPackage: 'org.halalz.kahfbrowser',
+          appPackage: 'io.kahf.browser',
+          //appPackage: 'org.halalz.kahfbrowser',
           appActivity: 'com.duckduckgo.app.launch.LaunchBridgeActivity',
           //appActivity: 'org.halalz.kahfbrowser.main.MainActivity',
           //appWaitActivity: 'com.duckduckgo.app.onboarding.ui.OnboardingActivity',

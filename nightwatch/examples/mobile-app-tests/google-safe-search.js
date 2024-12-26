@@ -2,11 +2,11 @@ describe('Google Safe Search', function(){
   before(function(app){
       app
       .click('xpath', '//android.widget.TextView[@content-desc="Kahf Browser"]')
-      .click('id', 'org.halalz.kahfbrowser:id/btnContinue')
-      .click('id', 'org.halalz.kahfbrowser:id/btnSkip')
-      .click('id', 'org.halalz.kahfbrowser:id/btnSkip')
-      .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
-      .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'https://www.google.com/')
+      .click('id', 'io.kahf.browser:id/btnContinue')
+      .click('id', 'io.kahf.browser:id/btnSkip')
+      .click('id', 'io.kahf.browser:id/btnSkip')
+      .click('id', 'io.kahf.browser:id/omnibarTextInput')
+      .sendKeys('id', 'io.kahf.browser:id/omnibarTextInput', 'https://www.google.com/')
       .pause(5000)
       .appium.pressKeyCode(66) 
       .pause(5000)
@@ -19,25 +19,25 @@ describe('Google Safe Search', function(){
   });
   it('Google Safe Search for Default(Low) mode', async function(app) {
       app
-      .click('xpath', '//android.widget.ImageView[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+      .click('xpath', '//android.widget.ImageView[@resource-id="io.kahf.browser:id/kahfSettingsButton"]')
       .pause(5000)
       .back()
       //.pause()
   });
   it('Google Safe Search for Medium mode', async function(app) {
       app
-      .click('xpath', '//android.widget.ImageView[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+      .click('xpath', '//android.widget.ImageView[@resource-id="io.kahf.browser:id/kahfSettingsButton"]')
       .pause(5000)
-      .click('xpath', '(//android.widget.RelativeLayout[@resource-id="org.halalz.kahfbrowser:id/btnContainer"])[2]')
+      .click('xpath', '(//android.widget.RelativeLayout[@resource-id="io.kahf.browser:id/btnContainer"])[2]')
       .pause(5000)
       .back()
       //.pause()
   });
   it('Google Safe Search for High mode', async function(app) {
       app
-      .click('xpath', '//android.widget.ImageView[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+      .click('xpath', '//android.widget.ImageView[@resource-id="io.kahf.browser:id/kahfSettingsButton"]')
       .pause(5000)
-      .click('xpath', '(//android.widget.RelativeLayout[@resource-id="org.halalz.kahfbrowser:id/btnContainer"])[1]')
+      .click('xpath', '(//android.widget.RelativeLayout[@resource-id="io.kahf.browser:id/btnContainer"])[1]')
       .pause(5000)
       .back()
       .pause()

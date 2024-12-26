@@ -5,9 +5,9 @@
 
   <testsuite name="mobile-app-tests.safe-search"
     errors="0" failures="0" hostname="" id="" package="mobile-app-tests" skipped="0"
-    tests="1" time="241.8" timestamp="">
+    tests="1" time="729.9" timestamp="">
   
-    <testcase name="Safe Search: filter out explicit content from search results." classname="mobile-app-tests.safe-search" time="120.9" assertions="0">
+    <testcase name="Safe Search: filter out explicit content from search results." classname="mobile-app-tests.safe-search" time="364.9" assertions="0">
     </testcase>
   
 

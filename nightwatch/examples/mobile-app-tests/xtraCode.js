@@ -7,3 +7,9 @@
     "appium:appWaitForLaunch": false,
     "appium:noReset": true
   }
+
+  //Run in real device
+  npx nightwatch ./nightwatch/examples/mobile-app-tests/safe-search.js --env app.android.real
+
+  //Run in emulator
+  npx nightwatch ./nightwatch/examples/mobile-app-tests/safe-search.js --env app.android.emulator

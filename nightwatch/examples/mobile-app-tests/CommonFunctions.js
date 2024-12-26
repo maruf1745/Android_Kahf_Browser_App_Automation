@@ -1,7 +1,7 @@
 module.exports = {
     ClickOnLetsGoButton: async function(app) {
         //io.kahf.browser
-        app.click('id', 'org.halalz.kahfbrowser:id/btnContinue')
+        app.click('id', 'io.kahf.browser:id/btnContinue')
     },
     Onboarding: async function(app) {
         app
@@ -11,18 +11,18 @@ module.exports = {
     SkipOnboarding: async function(app) {
         app
         //Skip default Browser settings
-        .click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
+        .click('xpath', '//android.widget.TextView[@resource-id="io.kahf.browser:id/btnSkip"]')
         .pause(5000)
         //Skip Bookmarks settings
-        .click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]')
+        .click('xpath', '//android.widget.TextView[@resource-id="io.kahf.browser:id/btnSkip"]')
         .pause(10000)
         //Skip Image Blurring
-        //.click('xpath', '//android.widget.TextView[@resource-id="org.halalz.kahfbrowser:id/btnSkip"]"]')
-        //.pause(5000)
+        .click('id', 'io.kahf.browser:id/btnSkip')
+        .pause(5000)
     },
     SetDefaultBrowser: async function(app) {
         app
-        .click('xpath', '//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/btnDefaultBrowser"]')
+        .click('xpath', '//android.widget.FrameLayout[@resource-id="io.kahf.browser:id/btnDefaultBrowser"]')
         .click('xpath', '//androidx.recyclerview.widget.RecyclerView[@resource-id="com.android.permissioncontroller:id/recycler_view"]/android.widget.LinearLayout[1]/android.widget.LinearLayout')
         .click('xpath', '(//android.widget.RadioButton[@resource-id="android:id/checkbox"])[2]')
         .click('xpath', '//android.widget.ImageButton[@content-desc="Navigate up"]')
@@ -32,21 +32,21 @@ module.exports = {
     SetFavoriteBookmarks: async function(app) {
         app
         //Add to Bookmark
-        .click('xpath', '(//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/rootView"])[1]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
-        .click('xpath', '(//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/rootView"])[2]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
-        .click('xpath', '(//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/rootView"])[3]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
-        .click('xpath', '(//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/rootView"])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
+        .click('xpath', '(//android.widget.FrameLayout[@resource-id="io.kahf.browser:id/rootView"])[1]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
+        .click('xpath', '(//android.widget.FrameLayout[@resource-id="io.kahf.browser:id/rootView"])[2]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
+        .click('xpath', '(//android.widget.FrameLayout[@resource-id="io.kahf.browser:id/rootView"])[3]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
+        .click('xpath', '(//android.widget.FrameLayout[@resource-id="io.kahf.browser:id/rootView"])[4]/android.widget.FrameLayout/androidx.cardview.widget.CardView')
         //Click Next Button
-        .click('xpath', '//android.widget.FrameLayout[@resource-id="org.halalz.kahfbrowser:id/btnSetBookmark"]')
+        .click('xpath', '//android.widget.FrameLayout[@resource-id="io.kahf.browser:id/btnSetBookmark"]')
     },
 
     SiteBlocking: async function(app) {
         app
-        .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
+        .click('id', 'io.kahf.browser:id/omnibarTextInput')
         //Browse by URL
-        //.sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'https://protonvpn.com/')
+        //.sendKeys('id', 'io.kahf.browser:id/omnibarTextInput', 'https://protonvpn.com/')
         //Browse by text
-        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'Proton VPN')
+        .sendKeys('id', 'io.kahf.browser:id/omnibarTextInput', 'Proton VPN')
         .pause(5000)
         .appium.pressKeyCode(66)
         .pause(5000)
@@ -55,29 +55,30 @@ module.exports = {
     },
     DNSSettings: async function(app) {
         app
+        //Default Selection is High
         //Medium
-        .click('xpath', '//android.widget.ImageButton[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+        .click('xpath', '//android.widget.ImageButton[@resource-id="io.kahf.browser:id/kahfSettingsButton"]')
         .pause(5000)
-        .click('xpath', '(//android.widget.RelativeLayout[@resource-id="org.halalz.kahfbrowser:id/btnContainer"])[2]')
+        .click('xpath', '(//android.widget.RelativeLayout[@resource-id="io.kahf.browser:id/btnContainer"])[2]')
         .pause(5000)
-        //High
-        .click('xpath', '//android.widget.ImageButton[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+        //Low
+        .click('xpath', '//android.widget.ImageButton[@resource-id="io.kahf.browser:id/kahfSettingsButton"]')
         .pause(5000)
-        .click('xpath', '(//android.widget.RelativeLayout[@resource-id="org.halalz.kahfbrowser:id/btnContainer"])[3]')
+        .click('xpath', '(//android.widget.RelativeLayout[@resource-id="io.kahf.browser:id/btnContainer"])[3]')
         .pause()
 
     },
     SelectDecentInternet: async function(app) {
         app
-        .click('xpath', '//android.widget.ImageButton[@resource-id="org.halalz.kahfbrowser:id/kahfSettingsButton"]')
+        .click('xpath', '//android.widget.ImageButton[@resource-id="io.kahf.browser:id/kahfSettingsButton"]')
         .pause(5000)
-        .click('xpath', '//android.widget.Switch[@resource-id="org.halalz.kahfbrowser:id/switch_safe_gaze"]')
+        .click('xpath', '//android.widget.Switch[@resource-id="io.kahf.browser:id/switch_safe_gaze"]')
         .pause()
     },
     SafeSearching: async function(app) {
         app
-        .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
-        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'Porn Hub')
+        .click('id', 'io.kahf.browser:id/omnibarTextInput')
+        .sendKeys('id', 'io.kahf.browser:id/omnibarTextInput', 'Porn Hub')
         .pause(5000)
         .appium.pressKeyCode(66)
         .pause(10000)
@@ -87,8 +88,8 @@ module.exports = {
         const testBrowsers = ['https://www.google.com/', 'https://www.bing.com/'];
         for(let i = 0; i < testBrowsers.length; i++){
             app
-            .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
-            .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', testBrowsers[i])
+            .click('id', 'io.kahf.browser:id/omnibarTextInput')
+            .sendKeys('id', 'io.kahf.browser:id/omnibarTextInput', testBrowsers[i])
             .appium.pressKeyCode(66)
             if(testBrowsers[0] = 'https://www.google.com/'){
                 app
@@ -117,8 +118,8 @@ module.exports = {
 
     ImageBlurring: async function(app) {
         app
-        .click('id', 'org.halalz.kahfbrowser:id/omnibarTextInput')
-        .sendKeys('id', 'org.halalz.kahfbrowser:id/omnibarTextInput', 'https://sites.google.com/kahf.co/safegaze')
+        .click('id', 'io.kahf.browser:id/omnibarTextInput')
+        .sendKeys('id', 'io.kahf.browser:id/omnibarTextInput', 'https://sites.google.com/kahf.co/safegaze')
         .appium.pressKeyCode(66)
         .pause(5000)
 
