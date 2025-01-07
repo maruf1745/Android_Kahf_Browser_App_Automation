@@ -44,5 +44,6 @@ describe('Bing Site Block', function(){
         .pause(5000)
         .back()
         //.pause()
+        // Update
     });
   });
